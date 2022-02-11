@@ -40,6 +40,12 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 /* Typography */
 h1 {
@@ -95,6 +101,31 @@ p {
   background-color: var(--color-white);
 }
 
+/* Home */
+#home {
+  background: url("imgs/home-background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 25px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-grey);
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-grey);
+}
+.home__contact:hover {
+  background-color: transparent;
+}
+
 /* 임의 등록  */
 #navbar__logo {
   width: 25px;
@@ -102,7 +133,9 @@ p {
 }
 
 .home__avatar {
-  max-width: 40%;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-dark-white);
 }
 .job__logo {
   max-width: 10%;
