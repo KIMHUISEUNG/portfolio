@@ -1,3 +1,32 @@
+/* Global */
+:root {
+  /* Color */
+  --color-dark-white: #f2f2f2;
+  --color-grey: #a6a6a6;
+  --color-dark-orange: #d9863d;
+  --color-light-orange: #f2a341;
+  --color-orange: #f29f05;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  /* Size */
+}
+
+/* Univerasl tags */
+* {
+  box-sizing: border-box;
+}
+
 #navbar__logo {
   width: 25px;
   height: 25px;
