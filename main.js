@@ -12,13 +12,19 @@ document.addEventListener("scroll", () => {
 });
 // handle scrolling when tapping on the navber menu
 const navbarMenu = document.querySelector(".navbar__menu");
+const navbarContact = document.querySelector(".home__contact");
 navbarMenu.addEventListener("click", (event) => {
   const target = event.target;
   const link = target.dataset.link;
   if (link == null) {
     return;
   }
-  console.log(event.target.dataset.link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollSelector(link);
 });
+navbarContact.addEventListener("click", (event) => {
+  scrollSelector("#contact");
+});
+function scrollSelector(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
