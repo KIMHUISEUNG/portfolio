@@ -10,6 +10,7 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("navbar--dark");
   }
 });
+
 // handle scrolling when tapping on the navber menu.
 const navbarMenu = document.querySelector(".navbar__menu");
 const navbarContact = document.querySelector(".home__contact");
@@ -19,8 +20,16 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   scrollSelector(link);
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
 navbarContact.addEventListener("click", (event) => {
   scrollSelector("#contact");
 });
