@@ -486,7 +486,7 @@ p {
     align-items: center;
   }
   .testimonials__avatar {
-    height: 120px;
+    height: 100px;
     width: 100px;
   }
   .testimonials__avatar:nth-child(even),
