@@ -209,6 +209,10 @@ p {
 .job__period {
   font-size: var(--font-micro);
 }
+#about__jobicon {
+  font-size: var(--font-medium);
+  width: 40px;
+}
 
 /* Skill */
 #skills {
@@ -426,6 +430,12 @@ p {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
+}
+/* 스크린이 975보다 클때 적용*/
+@media screen and (min-width: 975px) {
+  .major {
+    width: 300px;
+  }
 }
 /* For below 768px screen width */
 @media screen and (max-width: 780px) {
